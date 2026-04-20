@@ -1,7 +1,7 @@
 {
   "games": {
     "lolm": {
-      "latest_version": "1.2.0",
+      "latest_version": "1.2.1",
       "release_notes": "修复了某某bug",
       "download_url": "https://github.com/highlights0/all_game_update_lib/raw/main/lolm/LOLM.0420_1644.sh",
       "force_update": false,
