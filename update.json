@@ -3,7 +3,7 @@
     "lolm": {
       "latest_version": "1.2.1",
       "release_notes": "修复了某某bug",
-      "download_url": "https://github.com/highlights0/all_game_update_lib/blob/main/lolm/LOLM.0420_1942.sh",
+      "download_url": "https://github.com/highlights0/all_game_update_lib/blob/main/lolm/LOLM.0420_2000.sh",
       "force_update": false,
       "file_size": 10485760,
       "file_hash": "sha256:xxx"
