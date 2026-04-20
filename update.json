@@ -1,9 +1,20 @@
 {
-  "game_name": "lolm",
-  "latest_version": "1.2.0",
-  "release_notes": "修复了某某bug，增加了某某功能",
-  "download_url": "https://github.com/highlights0/all_game_update_lib/blob/main/lolm/LOLM.0420_1644.sh",
-  "force_update": false,
-  "file_size": 10485760,
-  "file_hash": "sha256:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  "games": {
+    "lolm": {
+      "latest_version": "1.2.0",
+      "release_notes": "修复了某某bug",
+      "download_url": https://github.com/highlights0/all_game_update_lib/blob/main/lolm/LOLM.0420_1644.sh",
+      "force_update": false,
+      "file_size": 10485760,
+      "file_hash": "sha256:xxx"
+    },
+    "valorant": {
+      "latest_version": "5.0.1",
+      "release_notes": "新特工上线",
+      "download_url": "https://.../Valorant_501.exe",
+      "force_update": true,
+      "file_size": 25000000,
+      "file_hash": "sha256:yyy"
+    }
+  }
 }
