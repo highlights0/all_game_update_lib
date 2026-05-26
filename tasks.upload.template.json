@@ -378,7 +378,7 @@
       "id": "决胜巅峰国际服",
       "name": "决胜巅峰国际服",
       "global": {
-        "package_name": "com.mobile.legends.usa:UnityKillsMe",
+        "package_name": "com.mobile.legends:UnityKillsMe",
         "module_query": "libcsharp.so:bss[1]",
         "head_type": "cb",
         "search_range": "0x10000",
@@ -501,9 +501,9 @@
     },
     {
       "id": "决胜巅峰国服",
-      "name": "决胜巅峰国服",
+      "name": "决胜巅峰国服4399",
       "global": {
-        "package_name": "com.mobile.legends",
+        "package_name": "com.dfjz.moba.m4399",
         "module_query": "libcsharp.so:bss[1]",
         "head_type": "cb",
         "search_range": "0x10000",
