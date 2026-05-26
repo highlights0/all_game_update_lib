@@ -19,11 +19,10 @@
     "aov": {
       "latest_version": "1.0.1",
       "release_notes": "测试",
-      "download_url": "https://github.com/highlights0/all_game_update_lib/blob/main/aov/EU_VN_TW_valor.0525_1925.sh",
+      "download_url": "https://github.com/highlights0/all_game_update_lib/blob/main/aov/EU_VN_TW_valor.0526_1639.sh",
       "force_update": true,
       "file_size": 25000000,
       "file_hash": "sha256:yyy"
     }
-    
   }
 }
