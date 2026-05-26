@@ -1,0 +1,80 @@
+{
+  "apps": [
+    {
+      "id": "app_1",
+      "name": "App 1",
+      "global": {
+        "package_name": "com.example.app1",
+        "module_query": "libil2cpp.so:bss[1]",
+        "head_type": "cb",
+        "search_range": "0x5000",
+        "search_step": "0x8",
+        "progress_every": "0x500",
+        "tail_offsets": ["0x80", "0xc0", "0xb8", "0x0", "0x0"],
+        "check_target_addr": true
+      },
+      "tasks": [
+        {
+          "id": "address_scan",
+          "name": "Address Scan",
+          "target_addr": "0x1234567890",
+          "first_offset_hint": "-0x212A220"
+        },
+        {
+          "id": "int_check_negative_offset",
+          "name": "Int Check Negative Offset",
+          "check_target_addr": false,
+          "first_offset_hint": "-0x212A220",
+          "value_checks": [
+            {
+              "type": "int",
+              "offset": "-0x4",
+              "compare": "=100"
+            }
+          ]
+        },
+        {
+          "id": "string_check_hello",
+          "name": "String Check Hello",
+          "check_target_addr": false,
+          "first_offset_hint": "-0x212A220",
+          "value_checks": [
+            {
+              "type": "string",
+              "offset": "0x8",
+              "compare": "hello"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "app_2",
+      "name": "App 2",
+      "global": {
+        "package_name": "com.example.app2",
+        "module_query": "libil2cpp.so:bss[1]",
+        "head_type": "cb",
+        "search_range": "0x4000",
+        "search_step": "0x8",
+        "progress_every": "0x400",
+        "tail_offsets": ["0x30", "0x18", "0x20"],
+        "check_target_addr": false
+      },
+      "tasks": [
+        {
+          "id": "string_check_custom",
+          "name": "String Check Custom",
+          "first_offset_hint": "-0x100",
+          "value_checks": [
+            {
+              "type": "string",
+              "offset": "0x0",
+              "compare": "hello"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
