@@ -1,0 +1,628 @@
+{
+  "runtime": {
+    "log_level": "silent"
+  },
+  "apps": [
+    {
+      "id": "com.garena.game.kgtw",
+      "name": "传说对决台服",
+      "global": {
+        "package_name": "com.garena.game.kgtw",
+        "module_query": "libil2cpp.so:bss[1]",
+        "head_type": "cb",
+        "search_range": "0x10000",
+        "search_step": "0x8",
+        "progress_every": "0x500",
+        "check_target_addr": true
+      },
+      "tasks": [
+        {
+          "id": "matrix",
+          "name": "矩阵",
+          "check_target_addr": false,
+          "first_offset_hint": "-0x3f24b0",
+          "search_range": "0x500000",
+          "tail_offsets": [
+            "0x40",
+            "0xB8",
+            "0x0",
+            "0x8",
+            "0x100"
+          ],
+          "value_checks": [
+            {
+              "type": "float",
+              "offset": "-0x14",
+              "compare": "=-1.0",
+              "tolerance": 0.1
+            },
+            {
+              "type": "float",
+              "offset": "0x40",
+              "compare": "=1.0",
+              "tolerance": 0.1
+            }
+          ]
+        },
+        {
+          "id": "matrix2",
+          "name": "矩阵2",
+          "check_target_addr": false,
+          "first_offset_hint": "-0x3f24b0",
+          "search_range": "0x500000",
+          "tail_offsets": [
+            "0xB8",
+            "0x0",
+            "0x8",
+            "0x100"
+          ],
+          "value_checks": [
+            {
+              "type": "float",
+              "offset": "-0x14",
+              "compare": "=-1.0",
+              "tolerance": 0.1
+            },
+            {
+              "type": "float",
+              "offset": "0x40",
+              "compare": "=1.0",
+              "tolerance": 0.1
+            }
+          ]
+        },
+        {
+          "id": "actormanager0",
+          "name": "actormanager0",
+          "check_target_addr": false,
+          "first_offset_hint": "-0x3f24b0",
+          "search_range": "0x500000",
+          "tail_offsets": [
+            "0xB8",
+            "0x0",
+            "0x28",
+            "0x0",
+            "0x10",
+            "0x0"
+          ],
+          "value_checks": [
+            {
+              "type": "string",
+              "offset": "0x0",
+              "compare": "ActorM"
+            }
+          ]
+        },
+        {
+          "id": "actormanager1",
+          "name": "actormanager1",
+          "check_target_addr": false,
+          "first_offset_hint": "-0x3f24b0",
+          "search_range": "0x500000",
+          "tail_offsets": [
+            "0xB8",
+            "0x2c0",
+            "0x28",
+            "0x0",
+            "0x10",
+            "0x0"
+          ],
+          "value_checks": [
+            {
+              "type": "string",
+              "offset": "0x0",
+              "compare": "ActorM"
+            }
+          ]
+        },
+        {
+          "id": "LGameActorMgr_v1",
+          "name": "LGameActorMgr_v1",
+          "check_target_addr": false,
+          "first_offset_hint": "0x384428 - 0x55C000",
+          "tail_offsets": [
+            "0xB8",
+            "0x0",
+            "0x30",
+            "0xC8",
+            "0x18",
+            "0x68",
+            "0xf8",
+            "0x0",
+            "0x10",
+            "0x0"
+          ],
+          "value_checks": [
+            {
+              "type": "string",
+              "offset": "0x0",
+              "compare": "LGameActorMgr"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.garena.game.kgvn",
+      "name": "传说对决越南服",
+      "global": {
+        "package_name": "com.garena.game.kgvn",
+        "module_query": "libil2cpp.so:bss[1]",
+        "head_type": "cb",
+        "search_range": "0x10000",
+        "search_step": "0x8",
+        "progress_every": "0x500",
+        "check_target_addr": true
+      },
+      "tasks": [
+        {
+          "id": "matrix",
+          "name": "矩阵",
+          "check_target_addr": false,
+          "first_offset_hint": "-0x3f24b0",
+          "search_range": "0x500000",
+          "tail_offsets": [
+            "0x40",
+            "0xB8",
+            "0x0",
+            "0x8",
+            "0x100"
+          ],
+          "value_checks": [
+            {
+              "type": "float",
+              "offset": "-0x14",
+              "compare": "=-1.0",
+              "tolerance": 0.1
+            },
+            {
+              "type": "float",
+              "offset": "0x40",
+              "compare": "=1.0",
+              "tolerance": 0.1
+            }
+          ]
+        },
+        {
+          "id": "matrix2",
+          "name": "矩阵2",
+          "check_target_addr": false,
+          "first_offset_hint": "-0x3f24b0",
+          "search_range": "0x500000",
+          "tail_offsets": [
+            "0xB8",
+            "0x0",
+            "0x8",
+            "0x100"
+          ],
+          "value_checks": [
+            {
+              "type": "float",
+              "offset": "-0x14",
+              "compare": "=-1.0",
+              "tolerance": 0.1
+            },
+            {
+              "type": "float",
+              "offset": "0x40",
+              "compare": "=1.0",
+              "tolerance": 0.1
+            }
+          ]
+        },
+        {
+          "id": "actormanager0",
+          "name": "actormanager0",
+          "check_target_addr": false,
+          "first_offset_hint": "-0x3f24b0",
+          "search_range": "0x500000",
+          "tail_offsets": [
+            "0xB8",
+            "0x0",
+            "0x28",
+            "0x0",
+            "0x10",
+            "0x0"
+          ],
+          "value_checks": [
+            {
+              "type": "string",
+              "offset": "0x0",
+              "compare": "ActorM"
+            }
+          ]
+        },
+        {
+          "id": "actormanager1",
+          "name": "actormanager1",
+          "check_target_addr": false,
+          "first_offset_hint": "-0x3f24b0",
+          "search_range": "0x500000",
+          "tail_offsets": [
+            "0xB8",
+            "0x2c0",
+            "0x28",
+            "0x0",
+            "0x10",
+            "0x0"
+          ],
+          "value_checks": [
+            {
+              "type": "string",
+              "offset": "0x0",
+              "compare": "ActorM"
+            }
+          ]
+        },
+        {
+          "id": "LGameActorMgr_v1",
+          "name": "LGameActorMgr_v1",
+          "check_target_addr": false,
+          "first_offset_hint": "0x384428 - 0x55C000",
+          "tail_offsets": [
+            "0xB8",
+            "0x0",
+            "0x30",
+            "0xC8",
+            "0x18",
+            "0x68",
+            "0xf8",
+            "0x0",
+            "0x10",
+            "0x0"
+          ],
+          "value_checks": [
+            {
+              "type": "string",
+              "offset": "0x0",
+              "compare": "LGameActorMgr"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "czr",
+      "name": "CZR",
+      "global": {
+        "package_name": "com.pi.czrxdfirst",
+        "module_query": "libil2cpp.so[2]",
+        "head_type": "cd",
+        "search_range": "0x5000",
+        "search_step": "0x8",
+        "progress_every": "0x500"
+      },
+      "tasks": [
+        {
+          "id": "render_manager",
+          "name": "RenderManager",
+          "module_query": "libil2cpp.so:bss[1]",
+          "head_type": "cb",
+          "target_addr": "0x79A865C9A0",
+          "check_target_addr": false,
+          "first_offset_hint": "0x542A8 - 0x1dd000",
+          "search_range": "0x50000",
+          "tail_offsets": [
+            "0xB8",
+            "0xf0",
+            "0x20",
+            "0x0",
+            "0x10",
+            "0x0"
+          ],
+          "value_checks": [
+            {
+              "type": "string",
+              "offset": "0x0",
+              "compare": "R"
+            }
+          ]
+        },
+        {
+          "id": "camera_follow",
+          "name": "CameraFollow",
+          "module_query": "libil2cpp.so:bss[1]",
+          "head_type": "cb",
+          "target_addr": "0x789315DCBF",
+          "check_target_addr": false,
+          "first_offset_hint": "0x645c-0X213000",
+          "search_range": "0x50000",
+          "tail_offsets": [
+            "0xB8",
+            "0xA0",
+            "0xB0",
+            "0x0",
+            "0x10",
+            "0x0"
+          ],
+          "value_checks": [
+            {
+              "type": "string",
+              "offset": "0x0",
+              "compare": "Cam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lolm_zn",
+      "name": "LOLM ZN",
+      "global": {
+        "package_name": "com.tencent.lolm",
+        "module_query": "libil2cpp.so[2]",
+        "head_type": "cd",
+        "search_range": "0x5000",
+        "search_step": "0x8",
+        "progress_every": "0x500"
+      },
+      "tasks": [
+        {
+          "id": "hero_array",
+          "name": "人物数组",
+          "module_query": "libil2cpp.so:bss[1]",
+          "head_type": "cb",
+          "target_addr": "0x79B085AB58",
+          "check_target_addr": true,
+          "first_offset_hint": "-0x10000",
+          "search_range": "0x500000",
+          "tail_offsets": [
+            "0xB8",
+            "0x0",
+            "0x18"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "决胜巅峰国际服",
+      "name": "决胜巅峰国际服",
+      "global": {
+        "package_name": "com.mobile.legends:UnityKillsMe",
+        "module_query": "libcsharp.so:bss[1]",
+        "head_type": "cb",
+        "search_range": "0x10000",
+        "search_step": "0x8",
+        "progress_every": "0x500"
+      },
+      "tasks": [
+        {
+          "id": "array_battlemanager",
+          "name": "Array_BattleManager",
+          "first_offset_hint": "0x664378 - 0x9DC000",
+          "tail_offsets": [
+            "0xB8",
+            "0x0",
+            "0x78",
+            "0x10",
+            "0x20",
+            "0x0"
+          ],
+          "check_target_addr": false,
+          "value_checks": [
+            {
+              "type": "int",
+              "offset": "0x1AC",
+              "compare": "1~30000"
+            },
+            {
+              "type": "int",
+              "offset": "0x1B0",
+              "compare": "1~30000"
+            },
+            {
+              "type": "int",
+              "offset": "0xD8",
+              "compare": "0~5"
+            }
+          ]
+        },
+        {
+          "id": "time_logicbattlemanager",
+          "name": "Time_LogicBattleManager",
+          "first_offset_hint": "0x6BE440 - 0x9DC000",
+          "tail_offsets": [
+            "0xB8",
+            "0x0",
+            "0x10",
+            "0x10",
+            "0x20",
+            "0x30"
+          ],
+          "check_target_addr": false,
+          "value_checks": [
+            {
+              "type": "int",
+              "offset": "0x0",
+              "compare": "0~30000000"
+            }
+          ]
+        },
+        {
+          "id": "matrix_world",
+          "name": "Matrix_World",
+          "first_offset_hint": "0x6510B0 - 0x9DC000",
+          "tail_offsets": [
+            "0xB8",
+            "0x8",
+            "0x10",
+            "0xC8"
+          ],
+          "check_target_addr": false,
+          "value_checks": [
+            {
+              "type": "float",
+              "offset": "0x0",
+              "compare": "=-1.0",
+              "tolerance": 0.001
+            }
+          ]
+        },
+        {
+          "id": "wild_logicwildbornmgr",
+          "name": "Wild_LogicWildBornMgr",
+          "first_offset_hint": "-0x3352d0",
+          "tail_offsets": [
+            "0xB8",
+            "0x0",
+            "0x68",
+            "0x0"
+          ],
+          "check_target_addr": false,
+          "value_checks": [
+            {
+              "type": "double",
+              "offset": "0x8",
+              "compare": "=0"
+            },
+            {
+              "type": "int",
+              "offset": "0x14",
+              "compare": "100~130"
+            },
+            {
+              "type": "int",
+              "offset": "0x1c",
+              "compare": "100~130"
+            },
+            {
+              "type": "int",
+              "offset": "0x24",
+              "compare": "100~130"
+            },
+            {
+              "type": "int",
+              "offset": "0x2C",
+              "compare": "100~130"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "决胜巅峰国服",
+      "name": "决胜巅峰国服4399",
+      "global": {
+        "package_name": "com.dfjz.moba.m4399",
+        "module_query": "libcsharp.so:bss[1]",
+        "head_type": "cb",
+        "search_range": "0x10000",
+        "search_step": "0x8",
+        "progress_every": "0x500"
+      },
+      "tasks": [
+        {
+          "id": "array_battlemanager",
+          "name": "Array_BattleManager",
+          "first_offset_hint": "0x664378 - 0x9DC000",
+          "tail_offsets": [
+            "0xB8",
+            "0x0",
+            "0x78",
+            "0x10",
+            "0x20",
+            "0x0"
+          ],
+          "check_target_addr": false,
+          "value_checks": [
+            {
+              "type": "int",
+              "offset": "0x1AC",
+              "compare": "1~30000"
+            },
+            {
+              "type": "int",
+              "offset": "0x1B0",
+              "compare": "1~30000"
+            },
+            {
+              "type": "int",
+              "offset": "0xD8",
+              "compare": "0~5"
+            }
+          ]
+        },
+        {
+          "id": "time_logicbattlemanager",
+          "name": "Time_LogicBattleManager",
+          "first_offset_hint": "0x6BE440 - 0x9DC000",
+          "tail_offsets": [
+            "0xB8",
+            "0x0",
+            "0x10",
+            "0x10",
+            "0x20",
+            "0x30"
+          ],
+          "check_target_addr": false,
+          "value_checks": [
+            {
+              "type": "int",
+              "offset": "0x0",
+              "compare": "0~30000000"
+            }
+          ]
+        },
+        {
+          "id": "matrix_world",
+          "name": "Matrix_World",
+          "first_offset_hint": "0x6510B0 - 0x9DC000",
+          "tail_offsets": [
+            "0xB8",
+            "0x8",
+            "0x10",
+            "0xC8"
+          ],
+          "check_target_addr": false,
+          "value_checks": [
+            {
+              "type": "float",
+              "offset": "0x0",
+              "compare": "=-1.0",
+              "tolerance": 0.001
+            }
+          ]
+        },
+        {
+          "id": "wild_logicwildbornmgr",
+          "name": "Wild_LogicWildBornMgr",
+          "first_offset_hint": "-0x3352d0",
+          "tail_offsets": [
+            "0xB8",
+            "0x0",
+            "0x68",
+            "0x0"
+          ],
+          "check_target_addr": false,
+          "value_checks": [
+            {
+              "type": "double",
+              "offset": "0x8",
+              "compare": "=0"
+            },
+            {
+              "type": "int",
+              "offset": "0x14",
+              "compare": "100~130"
+            },
+            {
+              "type": "int",
+              "offset": "0x1c",
+              "compare": "100~130"
+            },
+            {
+              "type": "int",
+              "offset": "0x24",
+              "compare": "100~130"
+            },
+            {
+              "type": "int",
+              "offset": "0x2C",
+              "compare": "100~130"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
