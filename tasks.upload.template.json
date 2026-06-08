@@ -142,6 +142,144 @@
         }
       ]
     },
+     "id": "com.garena.game.kgth",
+      "name": "传说对决泰服",
+      "global": {
+        "package_name": "com.garena.game.kgth",
+        "module_query": "libil2cpp.so:bss[1]",
+        "head_type": "cb",
+        "search_range": "0x10000",
+        "search_step": "0x8",
+        "progress_every": "0x500",
+        "check_target_addr": true
+      },
+      "tasks": [
+        {
+          "id": "matrix",
+          "name": "矩阵",
+          "check_target_addr": false,
+          "first_offset_hint": "-0x3f24b0",
+          "search_range": "0x500000",
+          "tail_offsets": [
+            "0x40",
+            "0xB8",
+            "0x0",
+            "0x8",
+            "0x100"
+          ],
+          "value_checks": [
+            {
+              "type": "float",
+              "offset": "-0x14",
+              "compare": "=-1.0",
+              "tolerance": 0.1
+            },
+            {
+              "type": "float",
+              "offset": "0x40",
+              "compare": "=1.0",
+              "tolerance": 0.1
+            }
+          ]
+        },
+        {
+          "id": "matrix2",
+          "name": "矩阵2",
+          "check_target_addr": false,
+          "first_offset_hint": "-0x3f24b0",
+          "search_range": "0x500000",
+          "tail_offsets": [
+            "0xB8",
+            "0x0",
+            "0x8",
+            "0x100"
+          ],
+          "value_checks": [
+            {
+              "type": "float",
+              "offset": "-0x14",
+              "compare": "=-1.0",
+              "tolerance": 0.1
+            },
+            {
+              "type": "float",
+              "offset": "0x40",
+              "compare": "=1.0",
+              "tolerance": 0.1
+            }
+          ]
+        },
+        {
+          "id": "actormanager0",
+          "name": "actormanager0",
+          "check_target_addr": false,
+          "first_offset_hint": "-0x3f24b0",
+          "search_range": "0x500000",
+          "tail_offsets": [
+            "0xB8",
+            "0x0",
+            "0x28",
+            "0x0",
+            "0x10",
+            "0x0"
+          ],
+          "value_checks": [
+            {
+              "type": "string",
+              "offset": "0x0",
+              "compare": "ActorM"
+            }
+          ]
+        },
+        {
+          "id": "actormanager1",
+          "name": "actormanager1",
+          "check_target_addr": false,
+          "first_offset_hint": "-0x3f24b0",
+          "search_range": "0x500000",
+          "tail_offsets": [
+            "0xB8",
+            "0x2c0",
+            "0x28",
+            "0x0",
+            "0x10",
+            "0x0"
+          ],
+          "value_checks": [
+            {
+              "type": "string",
+              "offset": "0x0",
+              "compare": "ActorM"
+            }
+          ]
+        },
+        {
+          "id": "LGameActorMgr_v1",
+          "name": "LGameActorMgr_v1",
+          "check_target_addr": false,
+          "first_offset_hint": "0x384428 - 0x55C000",
+          "tail_offsets": [
+            "0xB8",
+            "0x0",
+            "0x30",
+            "0xC8",
+            "0x18",
+            "0x68",
+            "0xf8",
+            "0x0",
+            "0x10",
+            "0x0"
+          ],
+          "value_checks": [
+            {
+              "type": "string",
+              "offset": "0x0",
+              "compare": "LGameActorMgr"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "com.garena.game.kgvn",
       "name": "传说对决越南服",
